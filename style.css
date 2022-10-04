@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    background: white;
+    overflow-x: hidden;
+}
+
+/* landing-image */
+
+.landing-image {
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 40px
+}
+
+@media screen and (max-width: 1200px) {
+    .landing-image img {
+        transform: translateX(-500px);
+    }
+}
+
+.landing-image::after {
+    content: "\"animals are more loyal than humans\"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 70px;
+    font-family: cursive;
+    text-align: center;
+
+}
+
+
+/* navigation bar */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 94%;
+    border-radius: 5px;
+    padding: 15px 2%;
+    font-size: 20px;
+    background-color: rgba(41, 41, 41, 0.653);
+    height: 30px;
+    color: white;
+    position: fixed;
+    left: 1%;
+    top: 10px;
+
+}
+
+.input {
+    width: 50%;
+    text-align: center;
+
+}
+
+.nav-buttons {
+    cursor: pointer;
+}
+
+.nav-buttons:hover {
+    background-color: black;
+    border-radius: 4px;
+
+}
+
+input[type='text'] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    padding: 5px;
+    transform: translateY(-10%);
+    width: 40%;
+    color: white;
+}
+
+
+::placeholder {
+    color: white;
+}
+
+#btn {
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn:active {
+    transform: translateY(2px) scale(97%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 3px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: rgb(75, 75, 75);
+}
+
+/* main information  */
+
+.street-pets {
+    margin-left: 6.5vw;
+}
+
+.street-pets p {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 65vw;
+}
+
+/* autocomplete  */
+
+#autocomplete {
+    width: 29%;
+    max-height: 45vh;
+    position: fixed;
+    background-color: white;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-79%);
+    box-shadow: 0 0 4px aqua;
+    display: none;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+
+#autocomplete h1 {
+    border-bottom: 2px solid blue;
+    width: 90%;
+}
+
+#autocomplete .data {
+    padding: 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid lightgrey;
+}
+
+.data:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+/* About us */
+
+#about-us {
+    width: 100vw;
+    align-self: center;
+    height: 20vh;
+    background-color: rgb(41, 41, 41);
+    margin-top: 30px;
+    padding-left: 100px;
+    padding-top: 15px;
+    color: white;
+}
+
+#about-us .info {
+    display: flex;
+    margin-top: 20px;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-us .info .details {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
